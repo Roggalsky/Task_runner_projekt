@@ -4,29 +4,109 @@
 }
 body{
     margin: 0;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.7;
 }
 .container{
     max-width: 1140px;
-    padding: 0 20px 0 20px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
+    padding: 0 20px 0 20px;
+    margin: 0 auto; 
 }
+
 .section{
     padding: 96px 0 96px 0;
 }
-/* Variables */
-
 /*Navigation*/
-
 .navigation{
-    background: rgb(92, 46, 135);
     padding: 12px 0 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.navigation ul{
+.navigation a{
+    text-decoration: none;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,  
+        -1px 1px 0 white,  
+        1px 1px 0 white;
+}
+
+.navbar-logo{
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    
+}
+.navbar-nav{
     padding: 0;
-    margin: 0; 
-    list-style-type: none; 
+    margin: 0;
 }
+
+.navbar-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar-nav li{
+    padding: 0;
+    margin-right: 35px;
+    display: inline-block;
+    position: relative;
+}
+/*Splash*/
+
+.splash{
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/17900124/pexels-photo-17900124/free-photo-of-wyspa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page-subtitle{
+    font-size: 18px;
+    margin: 48px 0 0 0;
+}
+.page-title{
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    color: #DBDCE0;
+}
+.block {
+    display: block;
+    max-width: 300px;
+    padding: 24px 0;
+    background: #1F2830;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .block:hover {
+    background: #1B232C;
+  }
+
+  /*Services*/
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.box{
+    position: relative;
+    flex: 0 0 33.333%;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "Hind", sans-serif;
+    color: #2c2c54; }
